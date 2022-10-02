@@ -3,7 +3,7 @@ FROM ubuntu:xenial
 LABEL org.opencontainers.image.source https://github.com/phartenfeller/no-more-room-in-hell-docker
 
 RUN apt-get update && \
-  apt-get install -y wget lib32gcc1 lib32tinfo5 unzip nginx
+  apt-get install -y wget lib32gcc1
 
 RUN useradd -ms /bin/bash steam
 WORKDIR /home/steam
