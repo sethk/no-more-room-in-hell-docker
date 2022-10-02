@@ -20,9 +20,12 @@ ENV SRV_HOSTNAME "My NMRIH Server"
 ENV SRV_PASSWORD ""
 ENV RCON_PASSWORD secretPassword
 
-EXPOSE 27015/udp # Server
+# Server
+EXPOSE 27015/udp
 EXPOSE 27015
-EXPOSE 27020/udp # HLTV high scores
+
+# HLTV high scores
+EXPOSE 27020/udp
 
 ADD ./entrypoint.sh entrypoint.sh
 
