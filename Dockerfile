@@ -16,7 +16,7 @@ RUN wget -O /tmp/steamcmd_linux.tar.gz http://media.steampowered.com/installer/s
 
 RUN ./steamcmd.sh +force_install_dir ./nmrih +login anonymous +app_update 317670 validate +quit # Update to date as of 2016-02-06
 
-ENV SRV_HOSTNAME My NMRIH Server
+ENV SRV_HOSTNAME "My NMRIH Server"
 ENV SRV_PASSWORD ""
 ENV RCON_PASSWORD secretPassword
 
